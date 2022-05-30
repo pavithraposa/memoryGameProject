@@ -1,0 +1,53 @@
+.header{
+    background-color: bisque;
+    text-align: center;
+    padding:2px;
+    width:1000px;
+    margin-left: 450px;
+    margin-top:50px;
+    font-size: 25px;
+}
+
+.Menu{
+    background-color: bisque;
+    text-align: center;
+    padding:10px;
+    width:500px;
+    height:400px;
+    margin-left: 650px;
+    margin-top:70px;
+    font-size: 17px;
+}
+
+.heading1{
+    float:left;
+}
+
+.player{
+    height:50px;
+    width:450px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.start{
+    background-color: darkgoldenrod;
+    height:40px;
+    width:450px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left:20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.blank{
+    background-color: bisque;
+    padding:2px;
+    width:1000px;
+    height:70px;
+    margin-left: 450px;
+    margin-top:50px;
+
+
+}

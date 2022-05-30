@@ -1,0 +1,306 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;/* If you set box-sizing: border-box; on an element, padding and border are included in the width and height.*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+   
+}
+
+body
+{
+    
+    display: flex;/*A flex container expands items to fill available free space or shrinks them to prevent overflow*/
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./nljdXo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+    background-color: hsla(41, 89%, 51%, 0.582);
+    
+    margin: 50px;
+    text-align: center;
+    
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+/* 
+.header{
+    background-color: bisque;
+    text-align: center;
+    padding:2px;
+    width:1000px;
+    align-items: center;
+   margin-left: 550px;
+    margin-top:50px; 
+
+} */
+/* .Menu{
+    background-color: bisque; 
+    text-align: center;
+    padding:10px;
+    width:500px;
+    height:400px;
+    margin-left: 650px;
+    margin-top:70px;
+    position: relative;
+    align-content: center; 
+}  */
+
+/* .blank{
+    background-color: bisque;
+    padding:2px;
+    width:1000px;
+    height:70px;
+    margin-left: 450px;
+    margin-top:50px;
+
+
+} */
+
+/*homepage*/
+/* .h1
+{
+    float: left;
+    margin-top: 50px;
+    
+    
+} */
+
+.playerbtn{
+    height:50px;
+    width:450px;
+    margin-top: 100px;
+  
+    
+}
+
+.computerbtn{
+    height:50px;
+    width:450px;
+    margin-top: 70px;
+}
+
+/*playersdetails*/
+
+.heading1{
+    align-items: center;
+    float:left;
+    margin-top: 30px;
+   
+}
+
+.heading2{
+    float:left;
+    margin-top: 20px;
+}
+
+.player1{
+    height:50px;
+    width:450px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+.player2{
+    height:50px;
+    width:450px;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+.start{
+    position: relative;
+    background-color:rgb(230, 209, 25);
+    height:50px;
+    width:450px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left:20px;
+    font-size: 25px;
+    font-weight:lighter;
+    
+}
+
+/*computerpage*/
+
+.player{
+    height:50px;
+    width:450px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.easybtn{
+    margin-top:50px;
+    height:50px;
+    width:100px;
+    margin-left:-70px;
+  
+}
+
+.difficultbtn{
+    height: 50px;
+    width:100px;
+    margin-top: 50px;
+    margin-right:20px;
+}
+
+/*playerboard*/
+.containerplayerboard
+{
+    position: relative;
+    align-items: center;   
+}
+
+.gameboard
+{
+    background-color: rgba(233, 62, 62, 0.404);
+    box-shadow: 0 35px 55px rgba(0,0,0,0.4);
+    margin-top: 30px;
+    height:900px;
+    width:1250px;
+    position: relative;
+    margin-left: 10px;
+    align-items: center;
+    
+
+}
+
+.scoreboard{
+    background-color: rgba(224, 203, 8, 0.582);
+    height: 900px;
+    width:500px;
+    position: relative;
+    margin-top:-910px;
+    margin-left: 1300px;
+    text-align: center;
+    align-items: center;
+}
+
+.history{
+    width:400px;
+    height:500px;
+    margin-top: 100px;
+}
+
+.resetbtn{
+
+    height:50px;
+    width:350px;
+    margin-top: 30px;
+}
+
+.exitbtn{
+
+    height:50px;
+    width:350px;
+    margin-top: 30px;
+
+}
+
+.imagesboard{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr  ;
+    max-width: 30em;
+    margin-left: 30px;
+}
+
+
+.images
+{
+    
+    position: relative;
+    float:center;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-color:#fff;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s all ease; 
+}
+
+.images:hover
+{
+    transform: scale(1.03);
+    
+}
+
+.images.clicked
+{
+    background-color: orange;
+} 
+
+.images.checked
+{
+    background-color:maroon;
+} 
+
+.images.clicked img,
+.images.checked img
+{
+    opacity: 1;
+}
+
+
+.images.change{
+    background-color: rgb(241,9,95);
+    animation:change 0.5s;
+    
+}
+.images.remove{
+    background-color: transparent;
+}
+
+@keyframes change {  
+    0%{
+        transform: translate(1px,1px) rotate(0deg);
+    }
+    30%{
+        transform: translate(3px,2px) rotate(0deg);
+    }
+    50% {
+        transform: translate(-1px,2px) rotate(-1deg);
+    }
+    70%{
+        transform: translate(3px,1px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px,-2px) rotate(-1deg);
+    }
+      
+}
+
+.images img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s all ease;  
+    opacity: 0;
+    /* width: 80%;
+    max-height: 90px;
+    opacity: 0; */
+    transition: 0.3s all ease;
+}
